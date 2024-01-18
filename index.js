@@ -66,4 +66,16 @@ function addOnList() {
         } else {
             window.alert("Você não selecionou nenhuma carta.");
         }
-    }
+}
+
+miniCard1.addEventListener("click", function() {
+    SelecionarMiniCard(1);
+});
+
+miniCard2.addEventListener("click", function() {
+    SelecionarMiniCard(2);
+});
+
+miniCard3.addEventListener("click", function() {
+    SelecionarMiniCard(3);
+});
