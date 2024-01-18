@@ -22,13 +22,21 @@
     word-wrap: break-word;
 }
 
+html,
+body {
+    height: 100%;
+}
+
 body {
     background-color: var(--background);
 }
 
 #container {
     display: flex;
-    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    height: 100vh;
 }
 
 #selectedCard {
@@ -81,7 +89,7 @@ body {
     transform: scale(1.4);
 }
 
-.miniCardSlected {
+.miniCardSelected {
     width: 6.625rem;
     height: 9.18rem;
     filter: grayscale(0%)
@@ -89,10 +97,22 @@ body {
 
 #cardInfo {
     width: 63%;
+    height: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 #containerInfo {
-    margin: 2rem 5.93rem 2.5rem 4rem;
+    align-items: center;
+    justify-content: center;
+
+    max-width: 800px;
+        /* Defina um valor máximo para o width do containerInfo, ajuste conforme necessário */
+        width: 100%;
+        /* Garante que o containerInfo ocupe 100% da largura disponível */
+        text-align: left;
 }
 
 nav {

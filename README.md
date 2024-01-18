@@ -1,1 +1,1 @@
-# projectLigaMagic
+# https://project-liga-magic.vercel.app/
