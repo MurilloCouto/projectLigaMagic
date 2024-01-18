@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:ital@0;1&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./style.css">
+
+    <title>Liga Magic Test</title>
+</head>
+<body>
+    <div id="container">
+        <div id="selectedCard">
+            <img class="greatCard" id="greatCard1" src="./Imagens/images/card1.png" alt="contramágica">
+            <img class="greatCard" id="greatCard2" src="./Imagens/images/card2.png" alt="contramágica">
+            <img class="greatCard" id="greatCard3" src="./Imagens/images/card3.png" alt="contramágica">
+            <div id="carrossel">
+                <img class="seta" id="setaEsq" onclick="RolarParaEsquerda()" src="./Imagens/icons/setaEsq.svg" alt="setaEsquerda">
+                <img class="miniCard" id="card1" src="./Imagens/images/card1.png" alt="contramágica">
+                <img class="miniCard" id="card2" src="./Imagens/images/card2.png" alt="contramágica">
+                <img class="miniCard" id="card3" src="./Imagens/images/card3.png" alt="contramágica">
+                <img class="seta" id="setaDir" onclick="RolarParaDireita()" src="./Imagens/icons/setaDir.svg" alt="setaDireita">
+            </div>
+        </div>
+        <div id="cardInfo">
+            <div id="containerInfo">
+                <nav>
+                    <p class="menu">Home</p>
+                    <p class="menu">Magic: The Gathering</p>
+                    <p class="menu">Busca</p>
+                    <p class="menu">Bazar - Lista de Desejos</p>
+                </nav>
+                <div id="dmrDiv">
+                    <p id="dominaria"><img src="./Imagens/icons/iconC.svg" alt="icon"><strong> #045 </strong> Dominaria Remastered</p>
+                    <p id="dmr"> DMR <img src="./Imagens/icons/iconSetaBaixo.svg" alt="setaBaixo"></p>
+                </div>
+                <div id="idCard">
+                    <div id="firstLine">
+                        <p id="contraMagica">Contramágica</p>
+                        <div id="icons">
+                            <img src="./Imagens/icons/heart.svg" alt="heart">
+                            <img src="./Imagens/icons/retiscencias.svg" alt="...">
+                        </div>
+                    </div>
+                    <p id="spell">Counterspell</p>
+                </div>
+                <div id="listaComprasContainer">
+                    <p id="tituloLista">Lista de Compras <img src="./Imagens/icons/iconMark.svg" alt="?"></p>
+                    <p id="textoLista">Add a carta aqui e deixe que a Liga calcule o melhor preço para você!</p>
+                    <div id="counterContainer">
+                        <div id="counter">
+                            <img id="plus" onclick="addCard()" src="./Imagens/icons/plus.svg" alt="+">
+                            <p id="num">0</p>
+                            <img id="minus" onclick="minusCard()" src="./Imagens/icons/minus.svg" alt="-">
+                        </div>
+                        <img id="adjust" src="./Imagens/icons/adjust.svg" alt="Ajustar">
+                        <p id="addItem" onclick="addOnList()"><img src="./Imagens/icons/add.svg" alt="add">adicionar na lista</p>
+                    </div>
+                </div>
+                <div id="cardDetails">
+                    <div id="headerDetails">
+                        <p class="blackText">Detalhes da Carta</p>
+                        <p class="orangeText">Ver Tudo</p>
+                    </div>
+                    <div id="details">
+                        <div class="eachDetail">
+                            <p>Cor</p>
+                            <p>Azul</p>
+                        </div>
+                        <div class="eachDetail">
+                            <p>Custo de Mana</p>
+                            <div id="manaIcons">
+                                <img src="./Imagens/icons/mana.svg" alt="manaCost">
+                                <img src="./Imagens/icons/mana.svg" alt="manaCost">
+                            </div>                            
+                        </div>
+                        <div class="eachDetail">
+                            <p>Tipo</p>
+                            <p>Mágica Instantânea</p>
+                        </div>
+                    </div>
+                </div>
+                <div id="card2Details">
+                    <div id="headerDetails">
+                        <p class="blackText">Preço Médio no Marketplace <img src="./Imagens/icons/inconMark2.svg" alt="?"></p>
+                        <p class="orangeText">Ver Tudo</p>
+                    </div>
+                    <div id="details">
+                        <div class="eachDetail">
+                            <p id="normal"><img src="./Imagens/icons/n.png" alt="N">Normal</p>
+                            <div id="priceContainer">
+                                <p class="price" id="green">R$ 6,28</p>
+                                <p class="price" id="yellow">R$ 9,39</p>
+                                <p class="price" id="orange">R$ 14,00</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</body>
+<script src="./index.js"></script>
+</html>
