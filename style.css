@@ -72,12 +72,6 @@ body {
     filter: grayscale(100%);
     transition: filter 0.3s ease, transform 0.3s ease;
 }
- 
-.miniCard:hover {
-    filter: grayscale(0%);
-    transform: scale(1.05);
-    box-shadow: 0px 4px 8px var(--black);
-}
 
 .seta {
     margin-bottom: 4rem;
